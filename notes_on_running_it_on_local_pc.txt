@@ -1,0 +1,33 @@
+Published service things
+
+ 
+
+AgeCalculatorService.IService1
+
+You have created a service.
+
+To test this service, you will need to create a client and use it to call the service. You can do this using the svcutil.exe tool from the command line with the following syntax:
+
+
+svcutil.exe http://localhost:50563/Service1.svc?wsdl
+
+
+That's what they say but you can publish the service - kind of like a compiled app - for local running 
+
+You publish it to a file place and run it with the command below, from packt book site https://subscription.packtpub.com/book/application_development/9781784391041/1/ch01lvl1sec12/hosting-the-wcf-service-in-iis-express
+
+On my pc, it's published in the repo folder - you point to the folder path that contains the service ".svc" file C:\Users\charles\source\repos\AgeCalculatorService\AgeCalculatorService\Service1.svc
+
+C:\Users\charles\source\repos\AgeCalculatorService\AgeCalculatorService
+
+and that also contains the all powerful web.config file
+
+
+"C:\Program Files\IIS Express\iisexpress" /path:C:\Users\charles\source\repos\AgeCalculatorService\AgeCalculatorService\ /port:50563 /clr:v3.5
+
+
+
+Actually - I don't think I need to run this command line mire than once - the command creates and launches (registers ) a service running under that port number. Yep.
+
+All ya need to start is a client. The first tutorial I did runs a Windows forms client. that project is named WCFConsumerForm. 
+
